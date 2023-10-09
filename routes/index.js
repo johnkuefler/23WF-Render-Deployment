@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/bird-info', function(req, res, next) {
+  res.render('sub-folder/birds');
+});
+
 module.exports = router;
